@@ -11,12 +11,12 @@
 <body>
     <nav class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
-        <ul class="flex gap-5 text-gray-600 hidden md:flex ">
+        <ul class="gap-5 text-gray-600 hidden md:flex">
             <li>
                 <a class="hover:underline" href="index.html">Home</a>
             </li>
@@ -28,6 +28,22 @@
             </li>
         </ul>
     </nav>
+    <section id="sidenav" class="bg-green-200 fixed z-20 top-0 transition-all duration-1000 " style="width: 50%; height: 100vh;right:-50%">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center gap-10 text-gray-600">
+            <li>
+                <a class="hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="product.html">Product</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
     <section class="bg-green-200 p-4 md:p-10 flex justify-center">
         <div>
             <p>We offer you a wild range of Artificial and Natural Flowers</p>
@@ -120,19 +136,27 @@
             <h1 class="text-3xl font-bold text-center">Customer Reviews</h1>
             <div class="flex flex-col gap-5 justify-center text-white m-5">
                 <div class="bg-green-900 p-5 container">Hello
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit voluptatem repudiandae similique natus ullam esse, eum placeat quibusdam temporibus facere? Accusamus natus, odit placeat eligendi doloremque quasi aliquid praesentium.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit voluptatem
+                        repudiandae similique natus ullam esse, eum placeat quibusdam temporibus facere? Accusamus
+                        natus, odit placeat eligendi doloremque quasi aliquid praesentium.</p>
                     <p class="font-bold text-yellow-300">Sandy</p>
                 </div>
-                <div class="bg-green-900 p-5 container">Hello
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit voluptatem repudiandae similique natus ullam esse, eum placeat quibusdam temporibus facere? Accusamus natus, odit placeat eligendi doloremque quasi aliquid praesentium.</p>
+                <div class="bg-green-900 p-5 container ">Hello
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit voluptatem
+                        repudiandae similique natus ullam esse, eum placeat quibusdam temporibus facere? Accusamus
+                        natus, odit placeat eligendi doloremque quasi aliquid praesentium.</p>
                     <p class="font-bold text-yellow-300">Rex</p>
                 </div>
                 <div class="bg-green-900 p-5 container">Hello
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit voluptatem repudiandae similique natus ullam esse, eum placeat quibusdam temporibus facere? Accusamus natus, odit placeat eligendi doloremque quasi aliquid praesentium.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit voluptatem
+                        repudiandae similique natus ullam esse, eum placeat quibusdam temporibus facere? Accusamus
+                        natus, odit placeat eligendi doloremque quasi aliquid praesentium.</p>
                     <p class="font-bold text-yellow-300">Rocky</p>
                 </div>
                 <div class="bg-green-900 p-5 container">Hello
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit voluptatem repudiandae similique natus ullam esse, eum placeat quibusdam temporibus facere? Accusamus natus, odit placeat eligendi doloremque quasi aliquid praesentium.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores reprehenderit voluptatem
+                        repudiandae similique natus ullam esse, eum placeat quibusdam temporibus facere? Accusamus
+                        natus, odit placeat eligendi doloremque quasi aliquid praesentium.</p>
                     <p class="font-bold text-yellow-300">Mike
                     </p>
                 </div>
@@ -141,17 +165,18 @@
         <section class=" text-center">
             <h1 class="text-3xl m-5 text-center font-bold">Join Our News Letter</h1>
             <p>Signup for email newspaper to get exclusive discounts,offers and extra</p>
-       <input  type="text" class="border border-black  p-2 m-3 " style="width: 80%;">
-       <br>
-       <button class="bg-black text-white p-3 m-1 underline">Subscribe</button>
+            <input type="text" class="border border-black  p-2 m-3 " style="width: 80%;">
+            <br>
+            <button class="bg-black text-white p-3 m-1 underline">Subscribe</button>
         </section>
         <section class="bg-green-200 p-10 flex flex-col gap-5">
             <h1 class="text-4xl font-bold">Greenden</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, fugiat.</p>
-<p>
-    &copy;2021 Greenden.com
-</p>
+            <p>
+                &copy;2021 Greenden.com
+            </p>
         </section>
+        <script src="index.js"></script>
 </body>
 
 </html>
